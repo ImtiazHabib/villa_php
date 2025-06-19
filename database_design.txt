@@ -1,0 +1,65 @@
+project name : villa
+----------------
+
+functionalities: ( main )
+------------
+1.user can login to the website for booking any reservation.
+2.user can see three type of assets
+-- appartments
+-- villas
+-- penthouse
+
+3. User can book any asset in the website.
+4. user can contact to the admin through a contact form.
+===================================
+
+Database tables:
+--------
+1.user
+2.Asset
+3.Booking
+=====
+Database Tbale details:
+----------------
+1.user
+==id (pk)
+==name ( varchar)
+==email(Varchar)
+==password(Hass)
+==phone(Varchar)
+== Address(Varchar)
+==profile_pic(text)
+==role(int)( 1= admin,2=user)
+==status(int)(0=inactive,1=active)
+===created_at(datetime)
+===updated_at(datetime)
+=============
+2.Assets
+----
+id(int)(pk)
+type(int)(1=appartment,2=villa,3=penthouse)
+title(varchar)
+price(decimal(10,2)
+bedroom(int)
+area(varchar)
+bathroom(int)
+floor(int)
+praking(varchar)
+images(text)
+===created_at(datetime)
+===updated_at(datetime)
+==========
+3.booking
+📦 Table Name: bookings
+Field Name	Data Type	Description
+id	INT (PK, AI)	Unique booking ID
+user_id	INT (FK)	References the user making the booking
+service_id	INT (FK)	References the service/item being booked (optional)
+booking_date	DATE	Date of the booking
+booking_time	TIME	Time of the booking (optional if not time-based)
+status	VARCHAR(20)	Booking status (e.g., pending, confirmed, cancelled)
+created_at	DATETIME	When the booking was created
+updated_at	DATETIME	Last time the booking was updated
+notes	TEXT	Optional notes from the user
+payment_status	VARCHAR(20)	Payment status (e.g., paid, unpaid, refunded)
+total_amount	DECIMAL(10,2)	Total cost of the booking
