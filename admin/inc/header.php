@@ -1,5 +1,9 @@
 
+<?PHP
 
+include "inc/auth/db.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
