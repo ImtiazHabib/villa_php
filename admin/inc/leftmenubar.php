@@ -47,18 +47,18 @@
           </li>
  
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="assets_manage.php" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                Catagories
+                Assets
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="catagory.php" class="nav-link">
+                <a href="assets_manage.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Manage Catagories</p>
+                  <p>Manage Assets</p>
                 </a>
               </li>
 
@@ -66,50 +66,6 @@
           </li> 
 
           <!-- ctrl + [ for move left and ctrl+] for move right  -->
-
-           <!-- Blog start -->
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-                Blog
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="post.php?do=Manage" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Manage All Blog</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="post.php?do=Add" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Blog </p>
-                </a>
-              </li>
-            </ul>
-          </li> 
-
-                  <!-- Users start -->
-                    <li class="nav-item">
-                      <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-chart-pie"></i>
-                        <p>
-                          Users
-                          <i class="right fas fa-angle-left"></i>
-                        </p>
-                      </a>
-                      <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                          <a href="users.php?do=Manage" class="nav-link">
-                            <i class="far fa-circle nav-icon"></i>
-                            <p>Manage All Users</p>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
 
           
 

@@ -1,6 +1,6 @@
 
 <?PHP
-
+ob_start();
 include "inc/auth/db.php";
 
 ?>
