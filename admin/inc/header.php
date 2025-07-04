@@ -4,6 +4,11 @@ ob_start();
 session_start();
 include "inc/auth/db.php";
 
+// php code for protect dashboard--- start
+if(empty($_SESSION['user_email']) && empty($_SESSION['user_password'])  ){
+  header("Location: index.php");
+}
+// php code for protect dashboard--- end
 ?>
 <!DOCTYPE html>
 <html lang="en">
