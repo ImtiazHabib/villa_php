@@ -1,6 +1,7 @@
 
 <?PHP
 ob_start();
+session_start();
 include "inc/auth/db.php";
 
 ?>

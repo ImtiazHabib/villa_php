@@ -46,7 +46,37 @@
         </div>
       </form>
       <!-- php login code start -->
-       
+       <?php 
+        if(isset($_POST['login'])){
+          $user_email = mysqli_real_escape_string($connect,$_POST['user_email']);
+          $user_password_not_hased = mysqli_real_escape_string($connect,$_POST['user_password']);
+
+          $user_password=sha1($user_password_not_hased);
+
+          $search_sql = "SELECT * FROM users where user_email='$user_email' AND user_password='$user_password'";
+          $search_query = mysqli_query($connect,$search_sql);
+
+          while($row=mysqli_fetch_assoc($search_query)){
+            $_SESSION['user_id'] = $row['user_id'];
+            $_SESSION['user_name'] = $row['user_name'];
+            $user_email_db = $row['user_email'];
+            $user_password_db = $row['user_password'];
+            $_SESSION['user_profile_pic'] = $row['user_profile_pic'];
+            $_SESSION['user_role'] = $row['user_role'];
+            $_SESSION['user_status'] = $row['user_status'];
+
+            // checking user is valid or not 
+            if($user_email == $user_email_db && $user_password == $user_password_db){
+              $_SESSION['user_email'] = $user_email;
+              $_SESSION['user_password'] = $user_password;
+              header("Location: dashboard.php");
+            }else{
+              header("Location: index.php");
+            }
+          }
+        }
+
+        ?>
       <!-- php login code end -->
        
       <div class="social-auth-links text-center mt-2 mb-3">
