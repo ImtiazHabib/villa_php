@@ -45,7 +45,7 @@
               </p>
             </a>
           </li>
- 
+          <!-- Sssets Section -->
           <li class="nav-item">
             <a href="assets_manage.php" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
@@ -64,7 +64,25 @@
 
             </ul>
           </li> 
+          <!-- User Section -->
+           <li class="nav-item">
+            <a href="users.php" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                Users
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="users.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>All Users</p>
+                </a>
+              </li>
 
+            </ul>
+          </li> 
           <!-- ctrl + [ for move left and ctrl+] for move right  -->
 
           
